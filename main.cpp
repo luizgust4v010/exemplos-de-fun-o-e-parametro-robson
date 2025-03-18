@@ -2,25 +2,28 @@
 
 using namespace std;
 
-int somaIntervalo();
+int somar(int a, int b);
 
 int main()
 {
-   cout << somaIntervalo();
+    int a, b;
+
+ cout << "entre com o valor de a ";
+ cin >> a;
+
+ cout << " entre com o valor de b ";
+ cin >> b;
+
+  cout << somar(10,10);
+
 }
 
-int somaIntervalo()
+int somar(int a, int b)
 {
-    int soma, a, b;
+    int soma;
 
-    a = 1;
-    b = 10;
-    soma = 0;
+    soma = a + b;
 
-    for(int i = a; i <= b ; i++)
-    {
-       soma = soma + i;
-    }
-    return soma;
+    return (soma);
 
 }
